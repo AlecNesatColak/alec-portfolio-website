@@ -1,0 +1,48 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/front-end.png",
+      "title": "Front-End",
+      "description": "Experienced in developing front-end applications using React, Angular, and Next.js. I have a strong understanding of the latest web technologies and best practices."
+    },
+    {
+      "id": "2",
+      "src": "./img/backend.png",
+      "title": "Back-End",
+      "description": "Leveraging my computer science degree and project experience, including FastAPI, Node.js, SpringBoot, and Django, I have a strong understanding of back-end development."
+    },
+    {
+      "id": "3",
+      "src": "./img/sql-server.png",
+      "title": "Database Management",
+      "description": "Experienced in database management using PostgreSQL, MySQL, and MongoDB. I have a strong understanding of database design and management portrayed by full stack applications and SQL complex query understanding and implementation."
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/WildFires.png",
+      "title": "US Wildfire Analytics",
+      "description": "Transformed a Kaggle dataset into an Angular and FastAPI web application that visualizes US wildfire data. The app allows users to filter and view wildfires by many different filters which seeks out trends and analytics regarding these fires.",
+      "link": "View In Github",
+      "url": "https://github.com/RyleyGG/cis4301-project"
+    },
+    {
+      "id": "2",
+      "src": "./img/placeholder-image-1.png",
+      "title": "BiteNav",
+      "description": "A macro tracker and recipe tool leveraging FastAPI and React frameworks for a full-fledged desktop and mobile application. The app also allows users to create and save their own recipes.",
+      "link": "View In Github",
+      "url": "https://github.com/RyleyGG/bitenav"
+    },
+    {
+      "id": "3",
+      "src": "./img/placeholder-image-2.png",
+      "title": "Cafe Turkiye",
+      "description": "A full-stack web ecommerce application that allows users to view and purchase Turkish coffee products. The app is built using React, Node.js, and MongoDB.",
+      "link": "View In Github",
+      "url": "https://github.com/AlecNesatColak/cafeTurkiye"
+    }
+  ]
+}
