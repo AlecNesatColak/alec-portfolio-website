@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { FaHome, FaProjectDiagram, FaInfoCircle, FaGraduationCap, FaEnvelope } from "react-icons/fa";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -14,8 +15,8 @@ function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu;
+      if (window.innerWidth > 768) {
+        closeMenu();
       }
     };
 
@@ -26,15 +27,9 @@ function Navbar() {
     };
   }, []);
 
-  useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu;
-    }
-  }, []);
-
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
+      <div className="navbar--logo">
         <img
           src="./img/GatorLogo.png"
           alt="GatorImage"
@@ -62,7 +57,7 @@ function Navbar() {
               to="heroSection"
               className="navbar--content"
             >
-              Home
+              <FaHome style={{ marginRight: '8px' }} /> Home
             </Link>
           </li>
           <li>
@@ -76,7 +71,7 @@ function Navbar() {
               to="MyPortfolio"
               className="navbar--content"
             >
-              Projects
+              <FaProjectDiagram style={{ marginRight: '8px' }} /> Projects
             </Link>
           </li>
           <li>
@@ -90,7 +85,7 @@ function Navbar() {
               to="AboutMe"
               className="navbar--content"
             >
-              About Me
+              <FaInfoCircle style={{ marginRight: '8px' }} /> About Me
             </Link>
           </li>
           <li>
@@ -104,7 +99,7 @@ function Navbar() {
               to="education"
               className="navbar--content"
             >
-              Education
+              <FaGraduationCap style={{ marginRight: '8px' }} /> Education
             </Link>
           </li>
         </ul>
@@ -119,7 +114,7 @@ function Navbar() {
         to="Contact"
         className="btn btn-outline-primary"
       >
-        Contact Me
+        <FaEnvelope style={{ marginRight: '8px' }} /> Contact Me
       </Link>
     </nav>
   );
